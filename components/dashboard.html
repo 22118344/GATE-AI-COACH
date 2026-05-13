@@ -1,0 +1,1013 @@
+<!-- ================= DASHBOARD CARDS ================= -->
+
+<section
+    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-10">
+
+    <!-- Study Hours -->
+
+    <div
+        class="bg-white/5 border border-white/10 rounded-3xl p-6 animate-float hover:scale-105 hover:shadow-glow transition-all duration-300">
+
+        <div class="flex items-center justify-between mb-6">
+
+            <div
+                class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center">
+
+                <i class="fa-solid fa-clock text-primary text-xl"></i>
+
+            </div>
+
+            <span class="text-green-400 text-sm">
+                +12%
+            </span>
+
+        </div>
+
+        <h2 class="text-gray-400 mb-2">
+            Study Hours
+        </h2>
+
+        <h1 class="text-4xl font-bold">
+            <span id="studyHoursValue">126</span>h
+        </h1>
+
+    </div>
+
+    <!-- Mock Score -->
+
+    <div
+        class="bg-white/5 border border-white/10 rounded-3xl p-6 hover:scale-105 hover:shadow-glow transition-all duration-300">
+
+        <div class="flex items-center justify-between mb-6">
+
+            <div
+                class="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center">
+
+                <i class="fa-solid fa-chart-line text-cyan-400 text-xl"></i>
+
+            </div>
+
+            <span class="text-green-400 text-sm">
+                +8%
+            </span>
+
+        </div>
+
+        <h2 class="text-gray-400 mb-2">
+            Mock Score
+        </h2>
+
+        <h1 class="text-4xl font-bold">
+            <span id="mockScoreValue">74</span>%
+        </h1>
+
+    </div>
+
+    <!-- Daily Streak -->
+
+    <div
+        class="bg-white/5 border border-white/10 rounded-3xl p-6 hover:scale-105 hover:shadow-glow transition-all duration-300">
+
+        <div class="flex items-center justify-between mb-6">
+
+            <div
+                class="w-14 h-14 rounded-2xl bg-pink-500/20 flex items-center justify-center">
+
+                <i class="fa-solid fa-fire text-pink-400 text-xl"></i>
+
+            </div>
+
+            <span class="text-green-400 text-sm">
+                +4
+            </span>
+
+        </div>
+
+        <h2 class="text-gray-400 mb-2">
+            Daily Streak
+        </h2>
+
+        <h1 class="text-4xl font-bold">
+            <span id="streakValue">18</span>Days
+        </h1>
+
+    </div>
+
+    <!-- XP Card -->
+
+    <div
+        class="bg-gradient-to-br from-primary/20 to-cyan-500/10 border border-white/10 rounded-3xl p-6 animate-float hover:shadow-glow transition-all duration-300">
+
+        <div class="flex items-center justify-between mb-6">
+
+            <div
+                class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center">
+
+                <i class="fa-solid fa-medal text-primary text-2xl"></i>
+
+            </div>
+
+            <span
+                class="bg-primary/20 text-primary px-4 py-2 rounded-xl text-sm font-semibold">
+
+                Level<span id="levelValue">12</span>
+
+            </span>
+
+        </div>
+
+        <h2 class="text-gray-400 mb-3">
+            Experience Points
+        </h2>
+
+        <h1 class="text-4xl font-bold mb-5">
+           <span id="xpValue">8450</span>XP
+        </h1>
+
+        <div class="w-full h-4 bg-white/5 rounded-full overflow-hidden mb-3">
+
+            <div
+                id="xpBar"
+                class="h-full bg-gradient-to-r from-primary to-cyan-400 rounded-full"
+                style="width: 78%">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ANALYTICS ================= -->
+
+<section class="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-10">
+
+    <div
+        class="xl:col-span-2 bg-white/5 border border-white/10 rounded-3xl p-6">
+
+        <div class="flex items-center justify-between mb-8">
+
+            <div>
+
+                <h2 class="text-2xl font-bold mb-2">
+                    Study Analytics
+                </h2>
+
+                <p class="text-gray-400">
+                    Weekly consistency tracking
+                </p>
+
+            </div>
+
+            <button
+                class="bg-primary px-6 py-3 rounded-2xl shadow-glow">
+
+                View Report
+
+            </button>
+
+        </div>
+
+        <canvas id="studyChart"></canvas>
+
+    </div>
+
+    <!-- AI Mentor -->
+
+    <div
+        class="bg-gradient-to-br from-primary/20 to-cyan-500/10 border border-white/10 rounded-3xl p-6 animate-float">
+
+        <div class="flex items-center gap-4 mb-8">
+
+            <div
+                class="w-14 h-14 rounded-2xl bg-primary/30 flex items-center justify-center">
+
+                <i class="fa-solid fa-robot text-primary text-2xl"></i>
+
+            </div>
+
+            <div>
+
+                <h2 class="text-2xl font-bold">
+                    AI Mentor
+                </h2>
+
+                <p class="text-gray-400">
+                    Smart suggestions
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="space-y-4">
+
+            <div
+                class="bg-white/5 border border-white/10 rounded-2xl p-4">
+
+                Improve DBMS normalization practice.
+
+            </div>
+
+            <div
+                class="bg-white/5 border border-white/10 rounded-2xl p-4">
+
+                Revise Operating System scheduling tomorrow.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTIVITY ================= -->
+
+<section class="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-10">
+
+    <!-- Daily Goals -->
+
+    <div
+        class="bg-white/5 border border-white/10 rounded-3xl p-6">
+
+        <h2 class="text-2xl font-bold mb-6">
+            Daily Goals
+        </h2>
+
+        <div class="space-y-5">
+
+            <div>
+
+                <div class="flex justify-between mb-2">
+
+                    <span>DBMS Revision</span>
+
+                    <span class="text-primary">80%</span>
+
+                </div>
+
+                <div class="w-full h-3 bg-white/5 rounded-full">
+
+                    <div class="w-[80%] h-full bg-primary rounded-full"></div>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="flex justify-between mb-2">
+
+                    <span>PYQ Practice</span>
+
+                    <span class="text-cyan-400">65%</span>
+
+                </div>
+
+                <div class="w-full h-3 bg-white/5 rounded-full">
+
+                    <div class="w-[65%] h-full bg-cyan-400 rounded-full"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Activity -->
+
+    <div
+        class="bg-white/5 border border-white/10 rounded-3xl p-6">
+
+        <h2 class="text-2xl font-bold mb-6">
+            Activity
+        </h2>
+
+        <div class="space-y-5">
+
+            <div>
+
+                <h3 class="font-semibold">
+                    Completed OS Revision
+                </h3>
+
+                <p class="text-sm text-gray-400">
+                    25 min ago
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3 class="font-semibold">
+                    Attempted Mock Test
+                </h3>
+
+                <p class="text-sm text-gray-400">
+                    1 hour ago
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Focus Timer -->
+
+    <div
+        class="bg-gradient-to-br from-primary/20 to-cyan-500/10 border border-white/10 rounded-3xl p-6">
+
+        <h2 class="text-2xl font-bold mb-8">
+            Focus Timer
+        </h2>
+
+        <div class="flex flex-col items-center">
+
+            <div
+                class="w-48 h-48 rounded-full border-[12px] border-primary/30 flex items-center justify-center mb-8 shadow-glow">
+
+                <div class="text-center">
+
+                    <h1 id="timer"
+                        class="text-5xl font-bold mb-2">
+
+                        25:00
+
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-4">
+
+                <button
+                    id="startTimer"
+                    class="bg-primary px-6 py-3 rounded-2xl">
+
+                    Start
+
+                </button>
+
+                <button
+                    id="resetTimer"
+                    class="bg-white/10 px-6 py-3 rounded-2xl">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= TASK MANAGER ================= -->
+
+<section
+    class="bg-white/5 border border-white/10 rounded-3xl p-6 mb-10">
+
+    <!-- Header -->
+
+    <div
+        class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 mb-8">
+
+        <div>
+
+            <h2 class="text-3xl font-bold mb-2">
+                Smart Task Manager
+            </h2>
+
+            <p class="text-gray-400">
+                Organize your daily preparation goals
+            </p>
+
+        </div>
+
+        <!-- Add Task -->
+
+        <div class="flex gap-3">
+
+            <input
+                id="taskInput"
+                type="text"
+                placeholder="Add new study task..."
+                class="bg-[#111827] border border-white/10 rounded-2xl px-5 py-3 outline-none w-[260px]">
+
+            <button
+                id="addTaskBtn"
+                class="bg-primary px-6 py-3 rounded-2xl font-semibold shadow-glow">
+
+                Add
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Task List -->
+
+    <div
+        id="taskList"
+        class="space-y-4">
+
+    </div>
+
+</section>
+<!-- ================= HEATMAP ================= -->
+
+<section
+    class="bg-white/5 border border-white/10 rounded-3xl p-6 mb-10">
+
+    <div class="flex items-center justify-between mb-8">
+
+        <div>
+
+            <h2 class="text-3xl font-bold mb-2">
+                Study Consistency
+            </h2>
+
+            <p class="text-gray-400">
+                Daily streak tracking
+            </p>
+
+        </div>
+
+        <i class="fa-solid fa-fire text-primary text-3xl"></i>
+
+    </div>
+
+    <div class="grid grid-cols-14 gap-3">
+
+        <div class="w-8 h-8 rounded-lg bg-primary hover:scale-125 transition-all duration-300 cursor-pointer"></div>
+
+        <div class="w-8 h-8 rounded-lg bg-cyan-400 hover:scale-125 transition-all duration-300 cursor-pointer"></div>
+
+        <div class="w-8 h-8 rounded-lg bg-primary/60"></div>
+
+        <div class="w-8 h-8 rounded-lg bg-primary"></div>
+
+        <div class="w-8 h-8 rounded-lg bg-white/5"></div>
+
+        <div class="w-8 h-8 rounded-lg bg-primary/20"></div>
+
+        <div class="w-8 h-8 rounded-lg bg-cyan-400"></div>
+
+    </div>
+
+</section>
+
+<!-- ================= AI RECOMMENDATION ================= -->
+
+<section
+    class="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-10">
+
+    <div
+        class="xl:col-span-2 bg-gradient-to-br from-primary/20 to-cyan-500/10 border border-white/10 rounded-3xl p-8">
+
+        <h2 class="text-3xl font-bold mb-8">
+            AI Recommendation Engine
+        </h2>
+
+        <div class="space-y-5">
+
+            <div
+                class="bg-white/5 border border-primary/20 rounded-2xl p-5">
+
+                Weak topic detected in Computer Networks.
+
+            </div>
+
+            <div
+                class="bg-white/5 border border-cyan-400/20 rounded-2xl p-5">
+
+                Revise Operating System tomorrow morning.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        class="bg-white/5 border border-white/10 rounded-3xl p-6">
+
+        <h2 class="text-2xl font-bold mb-6">
+            AI Insights
+        </h2>
+
+        <div class="space-y-4">
+
+            <div
+                class="bg-primary/10 border border-primary/20 rounded-2xl p-4">
+
+                Best study time: 8PM–11PM
+
+            </div>
+
+            <div
+                class="bg-cyan-500/10 border border-cyan-400/20 rounded-2xl p-4">
+
+                Strongest subject: DBMS
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= LEADERBOARD ================= -->
+
+<section
+    class="bg-white/5 border border-white/10 rounded-3xl p-6">
+
+    <div class="flex items-center justify-between mb-10">
+
+        <div>
+
+            <h2 class="text-3xl font-bold mb-2">
+                Weekly Leaderboard
+            </h2>
+
+            <p class="text-gray-400">
+                Top GATE aspirants
+            </p>
+
+        </div>
+
+        <i class="fa-solid fa-trophy text-yellow-400 text-3xl"></i>
+
+    </div>
+
+    <div class="space-y-5">
+
+        <div
+            class="flex items-center justify-between bg-gradient-to-r from-yellow-500/20 to-yellow-400/5 border border-yellow-400/20 rounded-3xl p-5">
+
+            <div class="flex items-center gap-5">
+
+                <div
+                    class="w-14 h-14 rounded-2xl bg-yellow-400 flex items-center justify-center text-black font-bold">
+
+                    1
+
+                </div>
+
+                <div>
+
+                    <h3 class="text-xl font-semibold">
+                        Aryan Sharma
+                    </h3>
+
+                    <p class="text-sm text-gray-400">
+                        AIR Prediction: 84
+                    </p>
+
+                </div>
+
+            </div>
+
+            <h2 class="text-2xl font-bold text-yellow-400">
+                14,200 XP
+            </h2>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= VIDEO LEARNING SECTION ================= -->
+
+<section
+    class="mt-10 bg-white/5 border border-white/10 rounded-3xl p-6">
+
+    <!-- Header -->
+
+    <div
+        class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 mb-10">
+
+        <div>
+
+            <h2 class="text-3xl font-bold mb-2">
+                Smart Video Learning
+            </h2>
+
+            <p class="text-gray-400">
+                AI-curated study videos for GATE preparation
+            </p>
+
+        </div>
+
+        <!-- Subject Filters -->
+
+        <div class="flex flex-wrap gap-3">
+
+            <button
+                class="bg-primary px-5 py-2 rounded-2xl font-semibold shadow-glow">
+
+                All
+
+            </button>
+
+            <button
+                class="bg-white/5 border border-white/10 px-5 py-2 rounded-2xl hover:bg-white/10 transition-all duration-300">
+
+                DBMS
+
+            </button>
+
+            <button
+                class="bg-white/5 border border-white/10 px-5 py-2 rounded-2xl hover:bg-white/10 transition-all duration-300">
+
+                OS
+
+            </button>
+
+            <button
+                class="bg-white/5 border border-white/10 px-5 py-2 rounded-2xl hover:bg-white/10 transition-all duration-300">
+
+                CN
+
+            </button>
+
+            <button
+                class="bg-white/5 border border-white/10 px-5 py-2 rounded-2xl hover:bg-white/10 transition-all duration-300">
+
+                DSA
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Video Grid -->
+
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+        <!-- Video Card -->
+
+        <div
+            class="bg-[#111827] border border-white/10 rounded-3xl overflow-hidden hover:scale-[1.02] hover:shadow-glow transition-all duration-300">
+
+            <!-- Thumbnail -->
+
+            <div class="relative">
+
+                <img
+                    src="https://img.youtube.com/vi/eIrMbAQSU34/maxresdefault.jpg"
+                    class="w-full h-[220px] object-cover">
+
+                <!-- Play Button -->
+
+                <div
+                    class="absolute inset-0 flex items-center justify-center">
+
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/80 backdrop-blur-md flex items-center justify-center shadow-glow">
+
+                        <i class="fa-solid fa-play text-white text-xl"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Duration -->
+
+                <div
+                    class="absolute bottom-4 right-4 bg-black/70 px-3 py-1 rounded-lg text-sm">
+
+                    42:15
+
+                </div>
+
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold mb-3 leading-relaxed">
+
+                    Complete DBMS Transaction & Concurrency Control
+
+                </h3>
+
+                <div
+                    class="flex items-center justify-between text-sm text-gray-400 mb-4">
+
+                    <span>
+                        Gate Smashers
+                    </span>
+
+                    <span>
+                        245K Views
+                    </span>
+
+                </div>
+
+                <!-- Tags -->
+
+                <div class="flex flex-wrap gap-2">
+
+                    <span
+                        class="bg-primary/20 text-primary px-3 py-1 rounded-xl text-xs">
+
+                        DBMS
+
+                    </span>
+
+                    <span
+                        class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-xl text-xs">
+
+                        Transactions
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Video Card -->
+
+        <div
+            class="bg-[#111827] border border-white/10 rounded-3xl overflow-hidden hover:scale-[1.02] hover:shadow-glow transition-all duration-300">
+
+            <div class="relative">
+
+                <img
+                    src="https://img.youtube.com/vi/IPvYjXCsTg8/maxresdefault.jpg"
+                    class="w-full h-[220px] object-cover">
+
+                <div
+                    class="absolute inset-0 flex items-center justify-center">
+
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/80 backdrop-blur-md flex items-center justify-center shadow-glow">
+
+                        <i class="fa-solid fa-play text-white text-xl"></i>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="absolute bottom-4 right-4 bg-black/70 px-3 py-1 rounded-lg text-sm">
+
+                    58:20
+
+                </div>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold mb-3 leading-relaxed">
+
+                    Operating System Complete Process Scheduling
+
+                </h3>
+
+                <div
+                    class="flex items-center justify-between text-sm text-gray-400 mb-4">
+
+                    <span>
+                        Knowledge Gate
+                    </span>
+
+                    <span>
+                        410K Views
+                    </span>
+
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+
+                    <span
+                        class="bg-pink-500/20 text-pink-400 px-3 py-1 rounded-xl text-xs">
+
+                        OS
+
+                    </span>
+
+                    <span
+                        class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-xl text-xs">
+
+                        Scheduling
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Video Card -->
+
+        <div
+            class="bg-[#111827] border border-white/10 rounded-3xl overflow-hidden hover:scale-[1.02] hover:shadow-glow transition-all duration-300">
+
+            <div class="relative">
+
+                <img
+                    src="https://img.youtube.com/vi/zOjov-2OZ0E/maxresdefault.jpg"
+                    class="w-full h-[220px] object-cover">
+
+                <div
+                    class="absolute inset-0 flex items-center justify-center">
+
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/80 backdrop-blur-md flex items-center justify-center shadow-glow">
+
+                        <i class="fa-solid fa-play text-white text-xl"></i>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="absolute bottom-4 right-4 bg-black/70 px-3 py-1 rounded-lg text-sm">
+
+                    1:12:10
+
+                </div>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold mb-3 leading-relaxed">
+
+                    Computer Networks Complete Routing Algorithms
+
+                </h3>
+
+                <div
+                    class="flex items-center justify-between text-sm text-gray-400 mb-4">
+
+                    <span>
+                        Jenny's Lectures
+                    </span>
+
+                    <span>
+                        520K Views
+                    </span>
+
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+
+                    <span
+                        class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-xl text-xs">
+
+                        CN
+
+                    </span>
+
+                    <span
+                        class="bg-primary/20 text-primary px-3 py-1 rounded-xl text-xs">
+
+                        Routing
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= AI CHAT BUTTON ================= -->
+
+<button
+    id="aiChatBtn"
+    class="fixed bottom-8 right-8 w-20 h-20 rounded-full bg-gradient-to-r from-primary to-cyan-400 shadow-glow flex items-center justify-center text-3xl z-50 hover:scale-110 transition-all duration-300">
+
+    <i class="fa-solid fa-robot"></i>
+
+</button>
+<!-- ================= AI CHAT WINDOW ================= -->
+
+<div
+    id="chatWindow"
+    class="hidden fixed bottom-32 right-8 w-[420px] h-[650px] bg-[#0f172a]/95 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl z-50 flex flex-col overflow-hidden">
+
+    <!-- Header -->
+
+    <div
+        class="bg-gradient-to-r from-primary/20 to-cyan-500/10 border-b border-white/10 p-5 flex items-center justify-between">
+
+        <div class="flex items-center gap-4">
+
+            <div
+                class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center">
+
+                <i class="fa-solid fa-robot text-primary text-2xl"></i>
+
+            </div>
+
+            <div>
+
+                <h2 class="text-xl font-bold">
+                    GATE AI Mentor
+                </h2>
+
+                <p class="text-green-400 text-sm">
+                    Online
+                </p>
+
+            </div>
+
+        </div>
+
+        <button
+            id="closeChatBtn"
+            class="text-gray-400 hover:text-white text-xl">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <!-- Chat Messages -->
+
+    <div
+        id="chatMessages"
+        class="flex-1 overflow-y-auto p-5 space-y-5">
+
+        <!-- AI Message -->
+
+        <div class="flex items-start gap-3">
+
+            <div
+                class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
+
+                <i class="fa-solid fa-robot text-primary"></i>
+
+            </div>
+
+            <div
+                class="bg-primary/10 border border-primary/20 rounded-2xl rounded-tl-sm p-4 max-w-[80%]">
+
+                Hello Gaurav 👋<br><br>
+
+                I am your AI mentor.<br>
+
+                Ask me anything about:
+                <br><br>
+
+                • GATE preparation<br>
+                • Study strategy<br>
+                • Computer Science subjects<br>
+                • Productivity<br>
+                • Mock tests
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Input Area -->
+
+    <div
+        class="border-t border-white/10 p-5">
+
+        <div class="flex gap-3">
+
+            <input
+                id="chatInput"
+                type="text"
+                placeholder="Ask your AI mentor..."
+                class="flex-1 bg-[#111827] border border-white/10 rounded-2xl px-5 py-4 outline-none">
+
+            <button
+                id="sendChatBtn"
+                class="bg-primary px-6 rounded-2xl shadow-glow">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
